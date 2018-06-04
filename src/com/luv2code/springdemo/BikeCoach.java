@@ -4,7 +4,16 @@ public class BikeCoach implements Coach{
 	
 	private FortuneService fortuneService;
 	
+	public BikeCoach() {
+		System.out.println("BikeCoach: inside no-arg constructor");
+	}
+	
 	public BikeCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+	
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("BikeCoach: inside setter method - setFortuneService");
 		this.fortuneService = fortuneService;
 	}
 	
