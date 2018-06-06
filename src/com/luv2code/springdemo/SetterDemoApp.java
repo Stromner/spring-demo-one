@@ -13,6 +13,8 @@ public class SetterDemoApp {
 		
 		// Call methods on the bean
 		System.out.println(bikeCoach.getDailyFortune());
+		System.out.println(bikeCoach.getTeam());
+		System.out.println(bikeCoach.getEmailAddress());
 		
 		// Close context
 		context.close();
