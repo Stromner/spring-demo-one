@@ -17,5 +17,4 @@
     <bean id="myFortuneService"
     	class="com.luv2code.springdemo.RandomFortuneService">
     </bean>
-
 </beans>
