@@ -5,7 +5,16 @@ public class TrackCoach implements Coach {
 	private FortuneService fortuneService;
 	
 	public TrackCoach(FortuneService fortuneService) {
+		System.out.println("Normal init method running");
 		this.fortuneService = fortuneService;
+	}
+	
+	public void customInit() {
+		System.out.println("Custom init method running");
+	}
+	
+	public void customDestroy() {
+		System.out.println("Custom destroy method running");
 	}
 	
 	@Override
